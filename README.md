@@ -1,5 +1,5 @@
 # SplitScreen
-Library for screen splitting and printing text into parts for Colour Maximite 2 computer<br><br>
+Library for screen splitting and printing text into parts for Colour Maximite 2 computer. Included is also file **SplitScreenTest.BAS**, where can be seen simple use of this library.<br><br>
   
 *CONTROL STRING DESCRIPTION (cs$, 22 bytes)*<br>
 *dx% = STR2BIN(UINT16, LEFT$(cs$, 2))*     x-coordinate of Left upper corner of the screen part<br>
