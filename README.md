@@ -33,8 +33,13 @@ Library for screen splitting and printing text into parts for Colour Maximite 2 
 *CHR$(8) is TAB character, used to go to the next TAB position*<br>
 *CHR$(10) is line feed character, uset to go to begin of the next line (screen can be scrolled up)*<br>
 *other ASCII codes bellow CHR$(32) are ignored*<br>
- <br>
+<br>
 **FUNCTION loadImage.SPLIT(cs$, fn$, iw%, ih%)**<br>
 *load image into full part of the screen<br>
 *when we know image width/height (iw%/ih%) is used (need to be smaller than MM.XRES/MM.YRES)<br>
 *returns TRUE (=1) when OK<br>
+ <br>
+ **FUNCTION input.SPLIT(cs$, allowedChars$, maxLen%) AS STRING**<br>
+*allows to input string in any split area, use any charaters from allowedChar$ (or any, if this string is empty)<br>
+*you can delete last character with BACKSPACE, finish the input with ENTER or RETURN (this will be not part of the returned string)<br>
+*with maxLen% you can limit length of the input, if it's <=0 or >255 then the limit will be 255 characters<br>
