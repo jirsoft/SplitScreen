@@ -43,3 +43,11 @@ Library for screen splitting and printing text into parts for Colour Maximite 2 
 *allows to input string in any split area, use any charaters from allowedChar$ (or any, if this string is empty)<br>
 *you can delete last character with BACKSPACE, finish the input with ENTER or RETURN (this will be not part of the returned string)<br>
 *with maxLen% you can limit length of the input, if it's <=0 or >255 then the limit will be 255 characters<br>
+### VERSION HISTORY
+#### v0.02
+		first version
+	
+#### v0.05
+		added input.SPLIT function
+		bugfix in scrolling (proper set height and limit)
+		TAB corrected from CHR$(8) to CHR$(9)
